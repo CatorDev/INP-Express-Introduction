@@ -1,14 +1,4 @@
-:root {
-    --textNormal: #ffffff;
-    --textPassive: #bababa;
-    --textHighlight: #fffc64;
-    --colorBackground: #121212;
-    --colorPicture: #171717;
-    --colorPictureOnHover: #282828;
-}
-
-body,
-html {
+body, html {
     font-family: 'Ubuntu', sans-serif;
     background-color: var(--colorBackground);
     color: var(--textNormal);

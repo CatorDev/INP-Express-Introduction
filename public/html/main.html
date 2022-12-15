@@ -5,32 +5,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Willkommen bei Nerd World</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/nav_bar.css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/item-container.css" type="text/css">
+    <link rel="stylesheet" href="../css/nav-bar.css" type="text/css">
   </head>
   <body>
     <header>
       <div class="nav_bar">
-        <a class="active" href="hauptseite.html">Homepage</a>
-        <a href="./category_gpu.html">GPUs</a>
-        <a href="./category_cpu.html">CPUs</a>
+        <a href="" class="active">Homepage</a>
+        <a href="category/gpu">GPUs</a>
+        <a href="category/cpu">CPUs</a>
       </div>
       <h1>Welcome to Nerd World!</h1>
+      <h2>Categorys</h2>
     </header>
-    <h4>Categorys</h4>
-    <section class="category_container">
-      <div class="category">
-        <a href="kategorie_technik.html">
-          <img src="https://images.stockx.com/images/AMD-MSI-Radeon-Gaming-MX-RX-5600-XT-Graphics-Card-RX-5600-XT-GAMING-MX-Black.jpg?fit=fill&bg=FFFFFF&w=480&h=320&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1612383155&q=75">
-          <h3>GPUs</h3>
-        </a>
+    <section class="container">
+      <a href="category/gpu">
+      <div class="item">
+          <img src="../images/example_gpu.jpg">
+          <p>GPUs</p>  
       </div>
-      <div class="category">
-        <a href="kategorie_alltag.html">
-          <img src="">
-          <h3>CPUs</h3>
-        </a>
+      </a>
+      <a href="category/cpu">
+      <div class="item">
+          <img src="../images/example_cpu.jpg">
+          <p>CPUs</p>
       </div>
+      </a>
       <!--
       Template zum Kopieren
       <div class="Kategorie">
