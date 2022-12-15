@@ -1,0 +1,44 @@
+:root {
+    --textNormal: #ffffff;
+    --textPassive: #bababa;
+    --textHighlight: #77db72;
+    --colorBackground: #121212;
+    --colorPicture: #171717;
+    --colorPictureOnHover: #282828;
+}
+
+.nav_bar
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--colorPictureOnHover);
+    transition-duration: 0.5s;
+    border: 10px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.nav_bar a
+{
+    text-decoration: none;
+    color: var(--textNormal);
+    padding: 20px;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+    background-color: var(--colorPictureOnHover);
+}
+
+.nav_bar a:hover
+{
+    color: var(--textNormal);
+    background-color: var(--colorPicture);
+}
+
+.nav_bar .active
+{
+    color: black;
+    background-color: var(--textHighlight);
+}
