@@ -18,5 +18,5 @@ app.get('/category/cpu', (req,res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Listening in on port ${port}`)
+    console.log(`Listening in on localhost:8080`)
 })

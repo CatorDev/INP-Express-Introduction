@@ -8,10 +8,9 @@
 
 .item
 {
-    color: var(--textNormal);
-    background-color: var(--colorPicture);
-    transition-duration: 0.5s;
-    width: 320px;
+    color: var(--normal);
+    background-color: var(--backgroundSection);
+    width: 300px;
     height: auto;
     border: 10px;
     padding: 20px;
@@ -20,8 +19,12 @@
 }
 .item:hover
 {
-    background-color: var(--textHighlight);
+    background-color: var(--highlight);
     transition-duration: 0.5s;
+}
+.item:hover
+{
+    color: var(--inverted);
 }
 .item img
 {
