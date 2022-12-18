@@ -4,15 +4,15 @@
 }
 :root {
     --normal: #ffffff;
-    --invertd: #000000;
-    --passive: #bababa;
+    --inverted: #000000;
+    --passive: #6d6868;
     --highlight: #77db72;
     --background: #121212;
     --backgroundSection: #2d2929;
 }
 body, html 
 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family:'Courier New', Courier, monospace;
     background-color: var(--background);
     color: var(--normal);
     margin: 0;

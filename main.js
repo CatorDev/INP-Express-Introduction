@@ -1,8 +1,18 @@
-const express = require('express')
-const app = express()
-const path = require('path')
-const port = 8080;
+// import express
+const express = require('express');
 
+// setup express
+const app = express()
+
+// port
+const port = 8000;
+
+const hostname = "localhost"
+
+// imports readcsv.js
+const readcsv = require('./app/readcsv')
+
+// setup static folder, so the user can access
 app.use(express.static('public'))
 
 app.get('/', (req,res) => {
@@ -17,6 +27,12 @@ app.get('/category/cpu', (req,res) => {
     res.sendFile('./public/html/category/cpu.html', {root: __dirname})
 })
 
-app.listen(port, () => {
-    console.log(`Listening in on localhost:8080`)
+// if the url is not valid, the 404 page will be sent as a response 
+// '*' -> default case
+app.get('*', function(req,res){
+    res.sendFile('./public/html/404.html', {root: __dirname})
+})
+
+app.listen(port,hostname, () => {
+    console.log(`Server started on http://${hostname}:${port}/`)
 })
