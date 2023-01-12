@@ -1,0 +1,33 @@
+nav
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--backgroundSection);
+    transition-duration: 0.5s;
+    border: 10px;
+    padding: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: var(--normal);
+    padding: 20px;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+    margin: auto 5px;
+}
+
+nav a:hover
+{
+    background-color: var(--highlight);
+}
+
+nav .active
+{
+    background-color: var(--passive);
+}
