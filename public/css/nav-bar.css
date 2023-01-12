@@ -1,4 +1,4 @@
-.nav_bar
+nav
 {
     display: flex;
     flex-direction: row;
@@ -7,12 +7,12 @@
     background-color: var(--backgroundSection);
     transition-duration: 0.5s;
     border: 10px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
+    padding: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-.nav_bar a
+nav a
 {
     text-decoration: none;
     color: var(--normal);
@@ -22,12 +22,12 @@
     margin: auto 5px;
 }
 
-.nav_bar a:hover
+nav a:hover
 {
     background-color: var(--highlight);
 }
 
-.nav_bar .active
+nav .active
 {
     background-color: var(--passive);
 }
