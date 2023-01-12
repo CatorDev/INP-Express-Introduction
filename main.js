@@ -47,38 +47,16 @@ const hostname = "localhost"
 // setup static folder, so the users browser can access files within
 app.use(express.static('public'))
 
+const root = './public'
+
 app.get('/', (req,res) => {
-    res.sendFile('./public/html/main.html', {root: __dirname})
-})
-
-app.get('/category/gpu', (req,res) => {
-    res.sendFile('./public/html/category/gpu.html', {root: __dirname})
-})
-
-app.get('/category/cpu', (req,res) => {
-    res.sendFile('./public/html/category/cpu.html', {root: __dirname})
-})
-
-app.get('/category/gpu1', (req,res) => {
-    res.sendFile(pages[0])
-})
-
-app.get('/rx5600xt', (req,res) => {
-    res.sendFile('./public/images/rx5600xt.jpg', {root: __dirname})
-})
-
-app.get('/category/gpu2', (req,res) => {
-    res.sendFile(pages[1])
-})
-
-app.get('/rtx2060', (req,res) => {
-    res.sendFile('./public/images/rtx2060.jpg', {root: __dirname})
+    res.sendFile('/html/main.html', {root: root})
 })
 
 // if the url is not valid, the 404 page will be sent as a response 
 // '*' -> default case
 app.get('*', function(req,res){
-    res.sendFile('./public/html/404.html')
+    res.sendFile('/html/404.html', {root: root})
 })
 
 app.listen(port,hostname, () => {
