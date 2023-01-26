@@ -2,7 +2,9 @@
 {
     text-decoration: none;
 }
-:root {
+
+:root 
+{
     --normal: #ffffff;
     --inverted: #000000;
     --passive: #6d6868;
@@ -10,6 +12,7 @@
     --background: #121212;
     --backgroundSection: #2d2929;
 }
+
 body, html 
 {
     font-family:'Courier New', Courier, monospace;
@@ -17,6 +20,7 @@ body, html
     color: var(--normal);
     margin: 0;
 }
+
 header
 {
     text-align: center;

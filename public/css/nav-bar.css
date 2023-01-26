@@ -3,7 +3,7 @@ nav
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: var(--backgroundSection);
     transition-duration: 0.5s;
     border: 10px;
