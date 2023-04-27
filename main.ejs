@@ -14,14 +14,15 @@
             <a href="/html/main.html">Main</a>
             <a href="/html/categorys/categorys.html">Categorys</a>
         </nav>
-        <h1>Welcome to Nikotin' Favourite Game Library</h1>
+        <h1>Filmebibliothek</h1>
     </header>
+    <!-- Liste für Filme -->
     <section class="container">
-        <a class="item">
-            <img class="game-image" src="/images/minecraft.jpg" alt="">
-            <h1 class="game-name"></h1>
-            <p class="game-description"></p>
-        </a>
+        <% movies.forEach(function(movie) {
+            <li>
+                <h2><%= movie.title %></h2>
+            </li>
+        }) %>
     </section>
     <footer>
         <p></p>
