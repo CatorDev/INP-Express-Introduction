@@ -20,14 +20,15 @@ const hostname = "localhost"
 // Verzeichnis für statische Dateien
 app.use(express.static(path.join(__dirname, 'public')))
 
+// Routen definieren
 app.get('/', (req,res) => {
-    //res.sendFile('/html/main.html', {root: root})
+    // Sql Query um alle Filme abzurufen
     db.query('SELECT * FROM movie', (error,results) => {
         if(error){
             // send error message
             return res.status(500).send('Internal Server Error')
         }
-        res.render('main',{
+        res.render('index',{
             movies: results,
         })
     })
