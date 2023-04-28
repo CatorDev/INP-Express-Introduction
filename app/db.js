@@ -8,7 +8,8 @@ const connection = mysql.createConnection({
 
 connection.connect((error) => {
     if(error){ 
-        console.log('Database connection error:',error)
+        console.log('Database connection error')
+        console.log(error)
     } else {
         console.log('Database Connection successfull')
     }

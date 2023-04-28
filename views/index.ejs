@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nikotin's Favourite Games</title>
+    <title>Onlymovies</title>
     <link rel="stylesheet" href="/css/main.css" type="text/css">
     <link rel="stylesheet" href="/css/item-container.css">
     <link rel="stylesheet" href="/css/nav-bar.css" type="text/css">
@@ -14,15 +14,24 @@
             <a href="/html/main.html">Main</a>
             <a href="/html/categorys/categorys.html">Categorys</a>
         </nav>
-        <h1>Filmebibliothek</h1>
+        <h1>Home</h1>
     </header>
     <!-- Liste für Filme -->
     <section class="container">
-        <% movies.forEach(function(movie) {
-            <li>
-                <h2><%= movie.title %></h2>
-            </li>
-        }) %>
+        <ul>
+        <!-- Schleife, welche die Filme auf der Website darstellt -->
+        <% movies.forEach(function(movie) { %>
+            <div class="item">
+                <li>
+                    <h2><%= movie.titel %></h2>
+                    <p><%= movie.beschreibung %></p>
+                    <p><%= movie.genre %></p>
+                    <p>Rating - <%= movie.bewertung %></p>
+                    <img src="<%= movie.bild %>"/>
+                </li>
+            </div>
+        <% }) %> 
+        </ul>
     </section>
     <footer>
         <p></p>
